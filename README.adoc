@@ -1,14 +1,7 @@
-= Stuck in the 70's?: Sanitize shell script from the disco era
+= Scriptology 
 
-This presentation is diving into bash features I do not usually encounter in the
-wild. As a matter of fact most shell scripts are written without taking advantage
-of the features introduced by Korn Shell in the early 80's and the Bash Shell
-later in the same decade.
-
-With Bash being ubiquitous throughout the Unix world there is little reason not to
-take advantage of the more advanced features it provides. During the presentation
-one learns how to make Bash scripts more predictable, less prone to errors an speed
-up the execution time by using built in functions.
+This presentation is diving into process of bringing ancient script into a testing
+framework.
 
 == Repo clone
 
@@ -17,7 +10,7 @@ clone the repository use the following command:
 
 [source,console]
 ----
-git clone --recursive https://github.com/uroesch/Stuck-in-the-70s.git
+git clone --recursive https://github.com/uroesch/Scriptology.git
 ----
 
 == Build documents
