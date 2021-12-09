@@ -1,0 +1,37 @@
+/* 
+@font-face {
+    font-family: 'BeuronCondensedCondensed';
+        src: url('BeuronCondensedCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+*/
+
+@font-face {
+    font-family: 'Beuron Condensed Regular';
+        src: url('BeuronCondensed-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+/*
+@font-face {
+    font-family: 'Beuron Extended Extended';
+        src: url('BeuronExtendedExtended.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+*/
+
+@font-face {
+    font-family: 'Beuron Extended Regular';
+        src: url('Beuron Extended Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'Beuron Regular';
+        src: url('Beuron-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }

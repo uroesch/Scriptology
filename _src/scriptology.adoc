@@ -1,0 +1,38 @@
+= Scriptology: Ready ancient scripts for CI/CD testing
+:author_1: Urs Roesch
+:email_1: roesch@puzzle.ch
+:firstname_1: Urs
+:lastname_1: Roesch
+:authorinitials_1: ur
+:docversion: '2021-06`-06'
+:subject: Convert and refactor old scripts for use with CI/CD pipelines.
+:keywords: unix, shell, bash, scripts, ci-cd
+:icons: font
+:experimental:
+:toc: left
+:toclevels: 4
+:toc-title: Scriptology
+:data-uri:
+:github-url: https://github.com/uroesch/Scriptology
+
+ifdef::backend-pdf[]
+:notitle:
+:noheader:
+
+= {doctitle}
+endif::backend-pdf[]
+
+
+include::modules/00-introduction.adoc[]
+
+<<<
+
+include::modules/01-the-journey.adoc[]
+
+<<<
+
+include::modules/02-stubs.adoc[]
+
+<<<
+
+include::modules/99-eof.adoc[]

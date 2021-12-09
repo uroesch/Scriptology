@@ -1,0 +1,39 @@
+// ifdef::backend-revealjs[=== !]
+
+[[what-is-scriptology]]
+
+== What is Scriptology
+
+A term derived from Script and Archaeology. Describes the art of finding scripts
+hidden under layers of system rubble, decipher their long forgotten syntax, dust
+them off and bring them into the modern world.
+
+
+[[why]]
+== A nagging problem
+As a sysadmin I write a lot of scripts that are for the most part irreversably
+modify the system. Keen to better myself I always wanted to have some automated
+testing for these scripts. The same is true for scripts I see at the places
+I work. Mostly these are scripts with no or very rudimentary testing frameworks.
+
+For the longest time I wondered how to test without making any changes. This
+short presentation gives a glimpse how I got there.  
+
+[.notes]
+--
+No notes.
+--
+
+////
+[[target-audience]]
+== Target audience
+
+If you often encounter shell or scripts written in `bash` and want
+to learn a few tricks to make your and your co-worker's life easier
+this presentation is for you.
+
+NOTE: A basic understanding of programming in general and shell scripting
+      in particular is assumed.
+////
+
+// vim: set colorcolumn=80 spell:

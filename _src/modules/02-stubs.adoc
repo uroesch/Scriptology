@@ -1,0 +1,80 @@
+[[stubs]]
+== Stubby programs
+
+[.notes]
+--
+Not yet
+--
+
+=== Bash stub
+
+For the most part when executing an external command the caller parses the 
+content from `STDOUT`. With the stub that is exactly what is done. Arguments
+in, text out.
+
+//ifdef::backend-revealjs[=== !]
+
+[source,bash]
+----
+#!/usr/bin/env bash
+
+declare -r BIN_DIR=$(cd $(dirname ${0}); pwd)
+declare -- PATH=${PATH/${BIN_DIR}/}
+export PATH
+
+case "${@}" in
+'branch') printf "  %s\n" "feature" "bugfix" "main" ;;
+'rev-parse --show-toplevel') echo "/git/root" ;;
+'rev-parse --abbrev-ref HEAD') echo 'bugfix' ;;
+'checkout'*) echo "Switched to branch '${2}'" ;;
+*) echo ${NAME} ${@} ;;   
+esac
+----
+
+=== Shell builtin stubs 
+
+When testing shell scripts there is the concept of builtins especially in bash.
+To override them a file like the one below needs to by sourced. 
+
+[source,bash]
+----
+# override builtin shell functions
+function cd {
+  :
+}
+
+function kill {
+  :
+}
+----
+
+=== Gitlab CI-CD sample
+
+With the stubs in place and checked into the repository the `.gitlab-ci.yml`
+file looks like the sample below:
+
+[source,yaml]
+----
+stages:
+  - test
+
+stubby-test:
+  stage: test
+  script:
+    - >
+      PATH=$(pwd)/tests/helpers:$PATH 
+      perl hot-script.pl --mode all --debug
+    - |2+
+      source stub.sh
+      bash hot-script.sh
+----
+
+=== Summary
+
+With a bit of elbow grease, a lot of sweat and a tear here and there one can
+bring scripts the ancient Greek would have recognized.
+
+Is it worth the effort. I leave that up to the participants to decide. 
+
+
+// vim: set colorcolumn=80 spell :

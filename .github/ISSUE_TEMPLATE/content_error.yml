@@ -1,0 +1,24 @@
+name: Content Error 
+description: Suggest a new topic to be included in the presentation.
+title: "[Content Error]: "
+labels: ["bug"]
+assignees:
+  - uroesch
+body:
+  - type: textarea
+    attributes:
+      label: Topic Suggestions
+      description: |
+        Describe why you think it should be in the presentation.
+        And provide some code samples.
+      placeholder: Describe the new topic.
+      value: |
+        Describe your suggestions and provide code samples.
+
+        ### Code samples
+
+        ```bash
+        echo 'sample code'
+        ``` 
+    validations:
+      required: true

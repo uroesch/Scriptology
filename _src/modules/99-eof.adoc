@@ -1,0 +1,14 @@
+ifdef::backend-revealjs[]
+[[eof]]
+== EOF
+
+icon:github[] *{github-url}*
+
+[NOTE]
+--
+Scripts 10 years and older were kindly donated to museums all around the world!
+--
+endif::backend-revealjs[]
+
+
+// vim: set colorcolumn=80 spell :

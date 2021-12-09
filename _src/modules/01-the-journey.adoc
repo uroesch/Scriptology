@@ -1,0 +1,55 @@
+[[the-journey]]
+== The Journey
+
+[.notes]
+--
+No notes yet.
+--
+
+=== SVN -> Git migration
+
+At the beginning I was tasked with a repository migration from Subversion to
+Git. Everything should be hosted on the internal Gitlab instance.
+
+
+[.notes]
+--
+No notes
+--
+
+=== Easy enough! Right?
+
+[.stretch]
+image::reality-check.png[]
+
+[.notes]
+--
+No notes
+--
+
+=== Challenges
+
+* Many interlinked repositories.
+* A plethora of scripts scattered all over.
+* None of the scripts are under version control.
+* Scripts running on AIX exclusively.
+* 🔥 Hot scripts, running them modifies state.
+
+=== Goals
+
+* Don't open Pandora's box by changing too much at any given time.
+* Focus on moving from Subversion to Git, not on the stuff around it.
+* Go one repo at the time.
+* Test, test, test and test again!
+
+=== Step by step approach
+
+* Move all scripts under version control
+* Add `--dry-run` option for faux-testing.
+* Remove hard coded path. 
+* Refactor code into modules and / or functions.
+* Add testing to modules.
+* Write stub programs to prevent the system from 💣.
+
+
+// vim: set colorcolumn=80 spell :
